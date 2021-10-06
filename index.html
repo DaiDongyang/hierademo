@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset='UTF-8'>
+		<title>Hieratron Demos</title>
+	</head>
+	<body>
+		<!-- <h2>
+			<center>Audio Samples</center>
+		</h2> -->
+		<h2>
+			<center>Cloning One's Voice Using Very Limited Data In The Wild<center>
+		</h2>
+		<!-- <h4>
+			<center>Authors: Dongyang Dai, Li Chen, Yuping Wang, Mu Wang, Rui Xia, Xuchen Song, Zhiyong Wu, Yuxuan Wang.</center>
+        </h4> -->
+        
+        <h3>&nbsp;</h3>
+        <div>
+            <p><b>Audio Exmaples For Hieratron:</b></p>
+            <p>事实上我总是发现一些非常真实的东西，那就是大多数人没有这些经历，因为他们从来不问。</p>
+            <p>In fact, I always find something very real, that is, most people don't have these experiences because they never ask.</p>
+            <table style="width:100%"> 
+                <tr>
+                    <th>Speaker</th>
+                    <th>Origin wav (Training data)</th>
+                    <th>Without Prosody Selection</th>
+                    <th>With Prosody Selection</th>
+                    <th>Cross style (rap) voice cloing</th>
+                    <th>Cross language voice cloing</th>
+                </tr>
+                <tr>&nbsp;</tr>
+                <tr>
+                    <th>spk-a</th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="a/origin/a.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="a/bs/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="a/ps/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="a/rap/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="a/en/1__spk0.npy.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                </tr>
+                <tr>
+                    <th>spk-b</th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="b/origin/b.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="b/bs/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="b/ps/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="b/rap/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="b/en/1__spk0.npy.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                </tr>
+                <tr>
+                    <th>spk-c</th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="c/origin/c.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="c/bs/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="c/ps/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="c/rap/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="c/en/1__spk0.npy.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                </tr>
+                <tr>
+                    <th>spk-d</th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="d/origin/d.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="d/bs/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="d/ps/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="d/rap/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="d/en/1__spk0.npy.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                </tr>
+                <tr>
+                    <th>spk-e</th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="e/origin/e.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="e/bs/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="e/ps/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="e/rap/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="e/en/1__spk0.npy.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                </tr>
+                <tr>
+                    <th>spk-f</th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="f/origin/f.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="f/bs/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="f/ps/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="f/rap/000016.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                    <th>
+                        <audio controls style="width: 250px;">
+                            <source src="f/en/1__spk0.npy.wav" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                          </audio>
+                    </th>
+                </tr>
+            </table>
+
+        </div>
+        <h3>&nbsp;</h3>
+        <div>
+            <h4>More Audio Samples</h4>
+            <table> 
+                <tr>
+                    <th><a href="a/demo_a.html">spk-a: more audio samples</a></th>
+                </tr>
+                <tr>
+                    <th><a href="b/demo_b.html">spk-b: more audio samples</a></th>
+                </tr>
+                <tr>
+                    <th><a href="c/demo_c.html">spk-c: more audio samples</a></th>
+                </tr>
+                <tr>
+                    <th><a href="d/demo_d.html">spk-d: more audio samples</a></th>
+                </tr>
+                <tr>
+                    <th><a href="e/demo_e.html">spk-e: more audio samples</a></th>
+                </tr>
+                <tr>
+                    <th><a href="f/demo_f.html">spk-f: more audio samples</a></th>
+                </tr>
+                
+            </table>
+
+        </div>
+
+    </body>
+</html>
