@@ -23,7 +23,7 @@ In the evaluation, each set of experimental configurations for each speaker is 3
 
 ### The influence of prosody selection
 
-To highlight the role of prosody selection, speaker similarity here uses more stringent standards
+To highlight the role of prosody selection, speaker similarity here uses more stringent standards.
 
 	1: This is definitely not the same person, even the gender is different. 
 	2: It may be the same person, but I can't be sure.
