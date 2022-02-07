@@ -1,8 +1,10 @@
-# Appendix: The Subjective evaluation
+# Appendix
+
+## The Subjective evaluation
 
 In the evaluation, each set of experimental configurations for each speaker is 30 synthesized speeches evaluated by 10 different listeners, and each person gives the evaluation results separately. The subjective evaluation of speech quality and speaker similarity adopts a 5-point system, and the evaluation score can only be an integer between 1-5. The meaning of each score is as follows:
 
-## Speech quality
+### Speech quality
 
 	1: Can’t understand, can only understand a few words 
 	2: Some key words are unclear, and the pauses and pronunciation make people feel uncomfortable 
@@ -11,9 +13,9 @@ In the evaluation, each set of experimental configurations for each speaker is 3
 	5: Broadcasting level, unable to distinguish between human voice and synthesized voice
 
 
-## Speech similiarity
+### Speech similiarity
 
-### Compared with tacotron based text2mel model
+##### Compared with tacotron based text2mel model
 
 	1: This is definitely not the same person, even the gender is different. 
 	2: It's not like the same person, most of them don't resemble, there are individual details.
@@ -21,7 +23,7 @@ In the evaluation, each set of experimental configurations for each speaker is 3
 	4: Should be the same person, although there are some differences 
 	5: This must be the same person, the tone and the way of speaking are the same person
 
-### The influence of prosody selection
+##### The influence of prosody selection
 
 To highlight the role of prosody selection, speaker similarity here uses more stringent standards.
 
@@ -30,3 +32,9 @@ To highlight the role of prosody selection, speaker similarity here uses more st
 	3: Should be the same person, although there are some differences
 	4: High probability be the same person. Not only heard as one person, but the tone and intonation are also somewhat similar. 
 	5: Must be the same person, their voice, intonation and speaking style are very similar.
+
+## Acknowledgement
+
++ Thanks to Changhe Song from Tsinghua University, whose work and discussion on PPG-TTS bring the author great insight.
++ Thanks to Yanjie Chen and Xiaofeng Shu from ByteDance for their tools for noise estimation and speech enhancement.
++ Thanks to Lei Huang and Shouda Liu of ByteDance for supporting the engineering of the model.
